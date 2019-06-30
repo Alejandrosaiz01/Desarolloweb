@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <style>
+        p {
+            margin: 1rem;
+        }
+
+        a.button {
+            border: solid 1px darkgray;
+            padding: .75rem;
+            background-color: lightgray;
+            text-align: center;
+            text-decoration: none;
+        }
+
+        a:hover.button {
+            background-color: darkgray;
+            color: white;
+        }
+
+        form label {
+            display: block;
+        }
+
+        form input[type="text"],
+        form input[type="email"],
+        form input[type="password"],
+        textarea {
+            width: 100%;
+            /* font-size: 1.1rem; */
+            padding: .5rem;
+        }
+
+        input[type="submit"] {
+            padding: .5rem;
+            font-size: 1.1rem;
+            min-width: 10rem;
+            border-radius: 20px;
+            border: 0;
+            background: deepskyblue;
+            background: linear-gradient(to right, #CCDDEE, #6DD5FA, #2980B9)
+        }
+
+        .container {
+            /* Defino el contenedor
+               a un tamaño ancho fijo 
+               y establezco un borde*/
+            /* width: 300px;
+            border: solid 1px gray; */
+
+            /* Solo centrado horizontal */
+            /* margin: 0 auto; */
+
+            /* Centrado horizontal y vertical */
+            /* 
+            position: absolute;
+            left: 50%;
+            top: 50%;
+
+            transform: translate(-50%, -50%); */
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        form {
+            border: solid 1px gray;
+            padding: 3rem;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <form action="index.html">
+            <p>
+                <label for="username">Nombre de usuario</label>
+                <input type="text" name="username" id="username">
+            </p>
+            <p>
+                <label for="password">Password</label>
+                <input type="password" name="password" id="password">
+            </p>
+            <p>
+                <input type="submit" value="Acceder" name="enviar">
+                <!-- <a href="index.html" class="button">Enviar</a> -->
+            </p>
+        </form>
+    </div>
+</body>
+
+</html>
